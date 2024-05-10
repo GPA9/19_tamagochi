@@ -1,0 +1,25 @@
+.color {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+}
+.topLeft {
+    background-color: aqua;
+    top: 0;
+    left: 0;
+}
+.topRight {
+    background-color: gold;
+    top: 0;
+    right: 0;
+}
+.downLeft {
+    background-color: greenyellow;
+    bottom: 0;
+    left: 0;
+}
+.downRight {
+    background-color: rebeccapurple;
+    bottom: 0;
+    right: 0;
+}
