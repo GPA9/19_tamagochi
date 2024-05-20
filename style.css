@@ -2,24 +2,94 @@
     width: 50%;
     height: 50%;
     position: absolute;
+    padding: 20px;
 }
+
+h2 {
+    font-size: 48px;
+    font-family: 'Press Start 2P', cursive;
+}
+
 .topLeft {
-    background-color: aqua;
+    background-color: hsl(133, 49%, 80%);
     top: 0;
     left: 0;
+    padding-left: 40px;
+    color: black;
+    -webkit-text-fill-color: hsl(133, 20%, 50%);
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke: 3px black;
+    /* -webkit-text-stroke: 3px hsl(133, 10%, 30%); */
 }
+.imageButton {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+#donutIcon {
+    width: 75px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+}
+
 .topRight {
-    background-color: gold;
+    text-align: right;
+    background-color: hsl(71, 100%, 89%);
     top: 0;
     right: 0;
+    padding-right: 40px;
+    color: black;
+    -webkit-text-fill-color: hsl(71, 85%, 69%);
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke: 3px black;
 }
+
 .downLeft {
-    background-color: greenyellow;
+    background-color: hsl(176, 62%, 87%);
     bottom: 0;
     left: 0;
+    padding-left: 40px;
+    padding-top: 30;
+    color: black;
+    -webkit-text-fill-color: hsl(176, 33%, 57%);
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke: 3px black;
 }
+
 .downRight {
-    background-color: rebeccapurple;
+    text-align: right;
+    background-color: hsl(312, 29%, 39%);
     bottom: 0;
     right: 0;
+    padding-right: 40px;
+    color: black;
+    -webkit-text-fill-color: hsl(312, 15%, 22%);
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke: 3px black;
+}
+
+.rightText {
+    float: right;
+    margin: 0px; 
+    padding-top: 20px;
+}
+.leftText {
+    float: left;
+    margin: 0px;
+    padding-top: 20px;
+}
+
+#idles {
+    position: absolute;
+    top: 42%;
+    left: 47%;
+    width: 250px; /* Aumentamos el tamaño */
+    height: auto; /* Mantenemos la proporción */
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+#icon_size {
+    width: 40px;
 }
