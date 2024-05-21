@@ -1,8 +1,17 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
 .color {
     width: 50%;
     height: 50%;
-    position: absolute;
+    position: relative;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 h2 {
@@ -14,47 +23,57 @@ h2 {
     background-color: hsl(133, 49%, 80%);
     top: 0;
     left: 0;
-    padding-left: 40px;
     color: black;
     -webkit-text-fill-color: hsl(133, 20%, 50%);
     /* Will override color (regardless of order) */
     -webkit-text-stroke: 3px black;
     /* -webkit-text-stroke: 3px hsl(133, 10%, 30%); */
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+
 }
-.imageButton {
+.eatB {
     background-color: transparent;
-    border: none;
+    border: 2px black solid;
     padding: 0;
-    cursor: pointer;
+    cursor: pointer;   
 }
 
-#donutIcon {
-    width: 75px; /* Ajusta el tamaño de la imagen según sea necesario */
+.eatButtons {
+    justify-content: space-between;
+}
+
+#eatIcons {
+    width: 50px; /* Ajusta el tamaño de la imagen según sea necesario */
     height: auto;
 }
 
 .topRight {
-    text-align: right;
     background-color: hsl(71, 100%, 89%);
     top: 0;
     right: 0;
-    padding-right: 40px;
     color: black;
     -webkit-text-fill-color: hsl(71, 85%, 69%);
     /* Will override color (regardless of order) */
-    -webkit-text-stroke: 3px black;
+    -webkit-text-stroke: 3px black;   
+    width: 50%;
+    height: 50%;
 }
 
 .downLeft {
     background-color: hsl(176, 62%, 87%);
     bottom: 0;
     left: 0;
-    padding-left: 40px;
     padding-top: 30;
     color: black;
     -webkit-text-fill-color: hsl(176, 33%, 57%);
     /* Will override color (regardless of order) */
     -webkit-text-stroke: 3px black;
+    width: 50%;
+    height: 50%;
 }
 
 .downRight {
@@ -62,28 +81,31 @@ h2 {
     background-color: hsl(312, 29%, 39%);
     bottom: 0;
     right: 0;
-    padding-right: 40px;
     color: black;
     -webkit-text-fill-color: hsl(312, 15%, 22%);
     /* Will override color (regardless of order) */
     -webkit-text-stroke: 3px black;
+    width: 50%;
+    height: 50%;
 }
 
 .rightText {
-    float: right;
+    justify-content: center;
     margin: 0px; 
     padding-top: 20px;
+    display: flex;
 }
 .leftText {
-    float: left;
-    margin: 0px;
+    justify-content: center;
+    margin: 0px; 
     padding-top: 20px;
+    display: flex;
 }
 
 #idles {
     position: absolute;
-    top: 42%;
-    left: 47%;
+    top: 48%;
+    left: 51%;
     width: 250px; /* Aumentamos el tamaño */
     height: auto; /* Mantenemos la proporción */
     transform: translate(-50%, -50%);

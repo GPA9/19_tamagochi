@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
     <div class="color topLeft">
-        <button class="imageButton">
-            <img id="donutIcon" src="./Icons/donut_pixel art.png" alt="Botón">
-        </button>
         <h2 class="leftText">Eat</h2>
+        <div class="eatButtons">
+            <button class="eatB donutButton">
+                <img id="eatIcons" src="./Icons/donut_pixel art.png" alt="Botón">
+            </button>
+            <button class="eatB  appleButton">
+                <img id="eatIcons" src="./Icons/apple_pixel.png" alt="Botón">
+            </button>
+            <button class="eatB  meatballButton">
+                <img id="eatIcons" src="./Icons/meatball.png" alt="Botón">
+            </button>
+        </div>
+        
     </div>
     <div class="color topRight">
         <h2 class="rightText">Play</h2>
@@ -27,4 +38,5 @@
     <img id="idles" src="./animations/dragonInitialIde.gif" alt="">
 </body>
 <script src="./jquery-3.7.1.min.js"></script>
+
 </html>
