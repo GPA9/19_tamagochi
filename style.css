@@ -50,6 +50,13 @@ h2 {
     width: 50px; /* Ajusta el tamaño de la imagen según sea necesario */
     height: auto;
 }
+.playButtons {
+    justify-content: space-between;
+}
+#playIcons {
+    width: 50px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+}
 
 .topRight {
     background-color: hsl(71, 100%, 89%);
@@ -107,6 +114,15 @@ h2 {
     top: 48%;
     left: 51%;
     width: 250px; /* Aumentamos el tamaño */
+    height: auto; /* Mantenemos la proporción */
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+#mark {
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    width: 350px; /* Aumentamos el tamaño */
     height: auto; /* Mantenemos la proporción */
     transform: translate(-50%, -50%);
     z-index: 10;
