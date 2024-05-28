@@ -24,7 +24,7 @@ h2 {
     top: 0;
     left: 0;
     color: black;
-    -webkit-text-fill-color: hsl(133, 20%, 50%);
+    -webkit-text-fill-color: rgb(102, 153, 113);
     /* Will override color (regardless of order) */
     -webkit-text-stroke: 3px black;
     /* -webkit-text-stroke: 3px hsl(133, 10%, 30%); */
@@ -37,13 +37,14 @@ h2 {
 }
 .eatB {
     background-color: transparent;
-    border: 2px black solid;
+    border: none;
     padding: 0;
     cursor: pointer;   
 }
 
 .eatButtons {
-    justify-content: space-between;
+    justify-content: space-evenly;
+    display: flex;
 }
 
 #eatIcons {
@@ -51,19 +52,35 @@ h2 {
     height: auto;
 }
 .playButtons {
-    justify-content: space-between;
+    justify-content: space-evenly;
+    display: flex;
 }
 #playIcons {
     width: 50px; /* Ajusta el tamaño de la imagen según sea necesario */
     height: auto;
 }
-
+.fightButtons {
+    justify-content: space-evenly;
+    display: flex;
+}
+#fightIcons {
+    width: 55px;
+    height: auto;
+}
+.restButtons {
+    justify-content: space-evenly;
+    display: flex;
+}
+#restIcons {
+    width: 50px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+}
 .topRight {
-    background-color: hsl(71, 100%, 89%);
+    background-color: rgb(245, 255, 199);
     top: 0;
     right: 0;
     color: black;
-    -webkit-text-fill-color: hsl(71, 85%, 69%);
+    -webkit-text-fill-color: rgb(219, 243, 109);
     /* Will override color (regardless of order) */
     -webkit-text-stroke: 3px black;   
     width: 50%;
@@ -71,12 +88,12 @@ h2 {
 }
 
 .downLeft {
-    background-color: hsl(176, 62%, 87%);
+    background-color: rgb(201, 242, 240);
     bottom: 0;
     left: 0;
     padding-top: 30;
     color: black;
-    -webkit-text-fill-color: hsl(176, 33%, 57%);
+    -webkit-text-fill-color: rgb(109, 182, 177);
     /* Will override color (regardless of order) */
     -webkit-text-stroke: 3px black;
     width: 50%;
@@ -85,11 +102,11 @@ h2 {
 
 .downRight {
     text-align: right;
-    background-color: hsl(312, 29%, 39%);
+    background-color: rgb(128, 71, 117);
     bottom: 0;
     right: 0;
     color: black;
-    -webkit-text-fill-color: hsl(312, 15%, 22%);
+    -webkit-text-fill-color: rgb(65, 48, 61);
     /* Will override color (regardless of order) */
     -webkit-text-stroke: 3px black;
     width: 50%;
